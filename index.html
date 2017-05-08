@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="pics/favicon-32x32.png" sizes="32x32" />
+  <title>; )</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="#">Hiya!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="alarmEmailTemplate.html">Alarm Email Template</a></li>
+          <li><a href="serviceEmailTemplate.html">Service Email Template</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <h3>Important Links</h3>
+        <p><a href="http://ci/sites/svc/CSG/CSG%20Public%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fsvc%2FCSG%2FCSG%20Public%20Documents%2FCSG_LVL1&FolderCTID=0x012000B18CD1991D3B14478816226BAB69FB0A&View=%7b84425A8C-6427-4B6C-BE71-7FFAD07FDE19%7d">Level 1 Sharepoint Folder</a> </p>
+        <p><a href="http://ci/sites/svc/Ops/LVL1/Forms/AllItems.aspx">On Call List</a></p>
+        <p><a href="http://ci/sites/svc/Ops/SitePages/Home.aspx  ">Dispatch On-Call</a></p>
+        <p><a href="http://ci/sites/svc/Lists/Account%20Matrix/AllItems.aspx">Account Matrix (SDMs, P1/MS)</a></p>
+        <p><a href="http://carousel.skillport.com/skillportfe/login.action">LMS Skill Soft Site</a></p>
+        <p><a href="https://thewell:8443/display/CDDASH/CI+Dashboard+Home"> The Well</a> </p>
+        <p><a href="https://secureservices.avaya.com/adp-alarmdictionary/menus/alarms.xhtml">Avaya Alarm Dictionary (Requires Avaya login)  </a> </p>
+      </div>
+
+
+
+
+      <div class="col-sm-10 text-center">
+        <h1>Maximum Effort!</h1>
+        <img src="http://rs255.pbsrc.com/albums/hh146/rjiggles/ETOTHESTOTHEM-DEADPOOL.jpg~c200" alt="hang in there">
+
+      </div>
+      <br>
+      <div class="container col-sm-10 text-left">
+        <h2>Items at Attention</h2>
+
+        <ul class="">
+          <li>LogistiCare alerts – I’ve sent in a separate email about this but it bears repeating. ALL media-gateway registration issues need tickets built with the two providers. Even if a MG resolves itself, it needs a Carousel ticket and two carrier tickets. And any alert that comes into Smartpoint, besides pin failures, NEED a ticket built in tigerpaw. Tickets are NEVER to be closed without customer’s permission. </li>
+          <li>When calling-out a text does not cut it. I’d prefer a call just in case a text doesn’t wake me. We’ve had 3 calls outs last week due to illness so try to clean your desks on your next shift and maybe start spring cleaning early. </li>
+          <li>I’d like to reiterate BCBSRI process. Most tickets will go zone: Custsrv-sdm assigned to Kerri Dennis. If the request is for data, it will go into CSG-Net zone, Bob lagasse. </li>
+          <li>Blue Cross and Blue Shield of RI’s board is Premier1/MS</li>
+          <li>Please be aware of customers with special instructions. A list of the most common can be <a href="http://ci/sites/svc/Ops/LVL1/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fsvc%2FOps%2FLVL1%2FAfter-Hours&FolderCTID=0x0120007196F55DA03AC34791AEB46EF5D668E7&View=%7b811F35F5-6508-4C35-B6EA-630436EC7FAE%7d&InitialTabId=Ribbon%2EDocument&VisibilityContext=WSSTabPersistence"> found here.</a> Also, if you run into other ‘gems’ please let me know and we can add the process to the list. </li>
+          <li>TJX’s network has been sensitive to H248 dropped connections. When you receive an alarm please notify the customer contacts, this is mainly for smartpoint people. </li>
+          <li>Reminder: For those on Smartpoint during the shift: You are not on an island alone, if you find that you are backed up ask for help. We are a team and if we load balance it will effectively be less work and less errors made. Never be afraid to ask questions or ask for help. Same goes for carbon peeps. </li>
+          <li>When engaging another company to assist us with a customer issue. [carrier issues, vendors, etc] Please type all relevant numbers/phone numbers in internal comments. This helps speed the process for when the ticket gets handed off and has saved my butt on multiple occasions. </li>
+          <li>When triaging alarms, especially registration and network connectivity errors, a critical eye needs to be placed upon the system to see if there are any other issues present.
+            <ul>
+              <li>Example: A media-gateway OOS alarm comes into Carbon, you access the system and see that it has self-resolved. Look at the other media-gateways to ensure that nothing else was effected by the bounce. Are there other alarms that came in at the same time that haven’t resolved? </li>
+              <li>Remember: Just because an alarm resolved, does not always mean the issue itself has gone away. Look to see if the alarm is recurring or not. This is an indicator that something much larger is going on.</li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="pics/favicon-32x32.png" sizes="32x32" />
+  <title>; )</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Welcome!</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="alarmEmailTemplate.html">Alarm Email Template</a></li>
+      <li><a href="serviceEmailTemplate.html">Service Email Template</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<body>
+  <div style="text-align:center">
+    <h1>Alarm Email Template</h1>
+
+    <form id="form2">
+      <input type="radio" name="priority" value="P1 - Critical"> Critical<br>
+      <input type="radio" name="priority" value="P2 - Major"> Major<br>
+      <input type="radio" name="priority" value="P3 - Minor"> Minor<br>
+      <input type="radio" name="priority" value="P4 - Standard"> Standard<br>
+    </form>
+    <br>
+    <form id="form1">
+      Service Order:
+      <input name="serviceOrder" size="35"><br><br> Brief Description:
+      <input name="briefDescription" type="text" size="31"><br>
+    </form>
+
+    <br>
+
+    <form id="form3">
+      OEM case/Reference Number:
+      <input name="refNum"><br><br> Carousel Technical Resource:
+      <input name="techResour"><br> Next Steps: <br>
+      <textarea name="nextSteps" rows="3" cols="50"></textarea>
+    </form>
+
+    <button onclick="outputAlarmEmail()">Submit</button>
+    <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+  </div>
+
+  <p id="email"></p>
+
+</body>
+
+</html>
